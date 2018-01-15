@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        format = { "pretty", "html:target/cucumber" },
+        plugin = { "pretty", "html:target/cucumber" },
         glue = {"nl.oa.demo.cucumber.stepdefinitions"}
 )
 public class RunAppleTest {
